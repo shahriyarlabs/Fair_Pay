@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নেত্রকোনা স্মার্ট ভাড়া ক্যালকুলেটর</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🛺 নেত্রকোনা ভাড়া ক্যালকুলেটর</h2>
+    
+    <div class="vehicle-toggle">
+        <label class="vehicle-option active-auto" id="labelAuto" onclick="setVehicle('auto')">
+            <input type="radio" name="vehicle" value="auto" checked> অটো
+        </label>
+        <label class="vehicle-option" id="labelRickshaw" onclick="setVehicle('rickshaw')">
+            <input type="radio" name="vehicle" value="rickshaw"> রিকশা
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>যাত্রা শুরু</label>
+        <select id="startZone" onchange="updateComplainRoute()">
+            <option value="A">A - Rail Crossing</option><option value="B">B - Professor Para Mor</option>
+            <option value="C">C - Kali Bari Mor</option><option value="D" selected>D - Teri Bazar Mor</option>
+            <option value="E">E - Shohid Minar Mor</option><option value="F">F - Bridge Mor</option>
+            <option value="G">G - Farm Gate</option><option value="H">H - Dhaka Bus Stand</option>
+            <option value="I">I - Kailati Mor</option><option value="J">J - Modon Bus Stand</option>
+            <option value="K">K - Goyanat</option><option value="L">L - Raju Bazar</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>গন্তব্য</label>
+        <select id="endZone" onchange="updateComplainRoute()">
+            <option value="A">A - Rail Crossing</option><option value="B">B - Professor Para Mor</option>
+            <option value="C">C - Kali Bari Mor</option><option value="D">D - Teri Bazar Mor</option>
+            <option value="E">E - Shohid Minar Mor</option><option value="F">F - Bridge Mor</option>
+            <option value="G">G - Farm Gate</option><option value="H">H - Dhaka Bus Stand</option>
+            <option value="I">I - Kailati Mor</option><option value="J" selected>J - Modon Bus Stand</option>
+            <option value="K">K - Goyanat</option><option value="L">L - Raju Bazar</option>
+        </select>
+    </div>
+
+    <div class="alley-section">
+        <h4>📍 গলির ভেতরের অ্যাড-অন</h4>
+        <div class="alley-row">
+            <div class="form-group"><label>বাসা থেকে (মি.)</label><input type="number" id="pickupAlley" value="0" min="0"></div>
+            <div class="form-group"><label>গন্তব্যে (মি.)</label><input type="number" id="dropoffAlley" value="0" min="0"></div>
+        </div>
+    </div>
+
+    <button id="calcBtn" class="btn-auto" onclick="calculateFare()">অটো ভাড়া বের করুন</button>
+    <div class="result-box auto-result" id="resultBox">
+        <div class="fare-amount" id="totalFare">০ টাকা</div>
+        <div class="breakdown" id="fareBreakdown"></div>
+    </div>
+
+    <div class="complain-toggle" onclick="toggleComplainBox()">⚠️ অতিরিক্ত ভাড়া নিচ্ছে? মডেল থানায় অভিযোগ করুন</div>
+
+    <div id="complainBox" class="complain-form-container">
+        <h3 style="margin-top:0; color:#c0392b; text-align:center;">🚨 মডেল থানায় জরুরি অভিযোগ</h3>
+        
+        <div class="form-group"><label>আপনার নাম</label><input type="text" id="cName" placeholder="আপনার পুরো নাম লিখুন"></div>
+        <div class="form-group"><label>মোবাইল নম্বর</label><input type="text" id="cPhone" placeholder="01XXXXXXXXX"></div>
+        <div class="form-group"><label>ঘটনার রুট</label><input type="text" id="cRoute" readonly style="background: #fff;"></div>
+        <div class="form-group">
+            <label>গাড়ির ধরন</label>
+            <select id="cVehicleType"><option value="অটোরিকশা">অটোরিকশা</option><option value="রিকশা">রিকশা</option></select>
+        </div>
+        <div class="form-group">
+            <label>নম্বর প্লেটের ছবি</label>
+            <div class="file-upload-wrapper">
+                📷 ক্যামেরায় ছবি তুলুন
+                <input type="file" id="cPic" accept="image/*" capture="environment" onchange="previewImage(event)">
+            </div>
+            <img id="imgPreview" src="" alt="প্রিভিউ">
+        </div>
+        <div class="form-group"><label>বিবরণ</label><textarea id="cDetails" rows="2" placeholder="অতিরিক্ত ভাড়ার বিবরণ লিখুন..."></textarea></div>
+        
+        <button class="btn-complain" id="submitBtn" onclick="handleSupabaseSubmit()">📧 ছবি আপলোড ও মডেল থানায় পাঠান</button>
+        <div id="statusMsg"></div>
+    </div>
+</div>
+    <!-- সুপাবেসের লাইব্রেরি লোড করা হচ্ছে -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- আপনার আলাদা করা জাভাস্ক্রিপ্ট ফাইলটি লোড করা হচ্ছে -->
+    <script src="script.js" defer></script>
+</body>
+</html>

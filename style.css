@@ -1,0 +1,263 @@
+body {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #34495e;
+    font-size: 14px;
+}
+
+select,
+input[type="number"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    border-color: #27ae60;
+    outline: none;
+}
+
+.vehicle-toggle {
+    display: flex;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.vehicle-option {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #7f8c8d;
+}
+
+.vehicle-option.active-auto {
+    background: #27ae60;
+    color: white;
+}
+
+.vehicle-option.active-rickshaw {
+    background: #e67e22;
+    color: white;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.alley-section {
+    background: #fdf2e9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.alley-section h4 {
+    margin: 0 0 10px 0;
+    color: #e67e22;
+    font-size: 15px;
+}
+
+.alley-row {
+    display: flex;
+    gap: 10px;
+}
+
+.alley-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-auto {
+    background-color: #27ae60;
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3);
+}
+
+.btn-rickshaw {
+    background-color: #e67e22;
+    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.3);
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    display: none;
+}
+
+.result-box.auto-result {
+    background: #e8f8f5;
+    border-left: 6px solid #1abc9c;
+}
+
+.result-box.rickshaw-result {
+    background: #fef5e7;
+    border-left: 6px solid #e67e22;
+}
+
+.fare-amount {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auto-result .fare-amount {
+    color: #16a085;
+}
+
+.rickshaw-result .fare-amount {
+    color: #d35400;
+}
+
+.breakdown {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+    border-top: 1px dashed #bdc3c7;
+    padding-top: 10px;
+}
+
+.complain-toggle {
+    background: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.complain-form-container {
+    display: none;
+    margin-top: 15px;
+    background: #fadbd8;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #e74c3c;
+}
+
+.btn-complain {
+    background-color: #c0392b;
+    margin-top: 10px;
+}
+
+.btn-complain:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border: 2px dashed #e74c3c;
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 100%;
+    height: 100%;
+}
+
+#imgPreview {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+}
+
+#statusMsg {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    display: none;
+    font-size: 14px;
+}
+
+.success {
+    color: #27ae60;
+}
+
+.error {
+    color: #e74c3c;
+}
