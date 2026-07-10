@@ -26,4 +26,4 @@ Finally, click the "Upload Image & Send to Model Thana" button.
 
 Within a few moments, Gmail will automatically open on your phone. All the details and the image link will be pre-filled. Simply press the "Send" button from there to submit your complaint to the Model Thana.
 
-# Fair_Pay
+# Fair_Pay: https://fairppay.netlify.app/
