@@ -1,12 +1,29 @@
-🛺 নেত্রকোনা স্মার্ট ভাড়া ক্যালকুলেটর
-পরিচিতি
-নেত্রকোনা স্মার্ট ভাড়া ক্যালকুলেটর হলো নেত্রকোনা শহরের যাত্রীদের জন্য তৈরি একটি ওয়েব অ্যাপ। এর মাধ্যমে আপনি শহরের যেকোনো রুটে অটো বা রিকশার সঠিক ভাড়া জানতে পারবেন এবং চালকদের অতিরিক্ত ভাড়া নেওয়া থেকে বিরত রাখতে পারবেন।
+🛺 Netrokona Smart Fare Calculator Introduction
+Netrokona Smart Fare Calculator is a web app designed specifically for commuters in Netrokona town. Through this app, you can find out the correct auto-rickshaw or rickshaw fare for any route in the town and prevent drivers from overcharging.
 
-যদি কোনো চালক তারচেয়ে বেশি ভাড়া দাবি করে, তবে এই অ্যাপের মাধ্যমে গাড়ির নম্বর প্লেটের ছবি তুলে সরাসরি মডেল থানায় অভিযোগ পাঠাতে পারবেন।
+If any driver demands more than the fixed fare, you can take a picture of the vehicle's license plate through this app and send a complaint directly to the Model Thana (local police station).
 
-ব্যাবহারবিধি
-ভাড়া জানতে:
-১. রুট বেছে নিন: "যাত্রা শুরু" এবং "গন্তব্য" লেখা ঘর থেকে আপনার বর্তমান অবস্থান এবং যেখানে যাচ্ছেন সেই মোড় বা পয়েন্টটি সিলেক্ট করুন।২. গাড়ির ধরন বেছে নিন: উপরের দিক থেকে 'অটো' বা 'রিকশা' অপশনটি সিলেক্ট করুন।৩. ভাড়া দেখুন: "ভাড়া বের করুন" বাটনে ক্লিক করুন। নিচে সঠিক টাকার পরিমাণ দেখাবে।(বিঃদ্রঃ আপনি যদি মেইন রোড থেকে গলির ভেতরে যান, তবে "গলির ভেতরের অ্যাড-অন" অংশে মিটার লিখে দিলে তার অতিরিক্ত ভাড়াও যোগ হয়ে যাবে।)
+How to Use
+To Find a Fare:
+Select the Route: Choose your current location and destination points/crossings from the "Starting Point" and "Destination" fields.
 
-অতিরিক্ত ভাড়া নিলে অভিযোগ করতে:
-১. পেজের একদম নিচে লাল রঙের "অতিরিক্ত ভাড়া নিচ্ছে? মডেল থানায় অভিযোগ করুন" লেখায় ক্লিক করুন।২. আপনার নাম এবং মোবাইল নম্বর লিখুন। (রুটটি অটোমেটিক আপনার আগের সিলেক্ট করা জায়গা থেকে বসে যাবে)।৩. গাড়ি অটো ছিল নাকি রিকশা ছিল সেটি সিলেক্ট করুন।৪. "নম্বর প্লেটের ছবি" অপশনে ক্লিক করে গাড়ির নম্বর প্লেটের একটি পরিষ্কার ছবি তুলুন।৫. চূড়ান্তভাবে "ছবি আপলোড ও মডেল থানায় পাঠান" বাটনে ক্লিক করুন। ৬. কিছুক্ষণ পর আপনার ফোনে জিমেইল (Gmail) ওপেন হবে। সব তথ্য এবং ছবির লিংক আগে থেকেই লেখা থাকবে। সেখান থেকে শুধু "Send" বাটনে চাপ দিলেই আপনার অভিযোগটি মডেল থানায় পৌঁছে যাবে।"# Fair_Pay" 
+Select the Vehicle Type: Choose either the 'Auto' or 'Rickshaw' option from the top section.
+
+Check the Fare: Click the "Calculate Fare" button. The correct fare amount will be displayed below.
+
+(N.B. If you travel into an alley from the main road, entering the distance in the "Alley Add-on" section will calculate and add the additional fare automatically.)
+
+To File a Complaint for Overcharging:
+Click on the red text at the very bottom of the page that reads: "Being overcharged? Complain to the Model Thana."
+
+Enter your name and mobile number. (The route will be automatically filled in based on your previously selected locations).
+
+Select whether the vehicle was an auto-rickshaw or a regular rickshaw.
+
+Click on the "License Plate Photo" option to take a clear picture of the vehicle's number plate.
+
+Finally, click the "Upload Image & Send to Model Thana" button.
+
+Within a few moments, Gmail will automatically open on your phone. All the details and the image link will be pre-filled. Simply press the "Send" button from there to submit your complaint to the Model Thana.
+
+# Fair_Pay
